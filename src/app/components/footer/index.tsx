@@ -1,227 +1,31 @@
 "use client";
-
 import React from "react";
-import Image from "next/image";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Link from "next/link";
+import Socialmedia from "../Socialmedia";
+import FooterContent from "./footercontent";
 
 export default function Footer()
 {
     return(
         <React.Fragment>
         <footer className="text-gray-600 body-font border-t">
-        <div className="container px-5 lg:px-20 py-24 mx-auto">
-            <div className="flex flex-wrap md:text-left  -mb-10 -mx-4">
- 
-            <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-                <h2 className="title-font font-bold text-black text-xl mb-5">AccountantAI</h2>
-                <div className="list-none mb-10">
-                    <p className="mb-5 text-gray-600">Transforming Industries through Innovative Technology</p>
+            <div className="container px-5 lg:px-20">
+                <div className="flex flex-wrap md:text-left  -mb-10 -mx-4 text-center">
+                    <div className="lg:w-1/6 md:w-1/2 w-full px-4">
+                        <h2 className="custom-text mb-5">AccountantAI</h2>
+                        <div className="list-none mb-10">
+                            <p className="mb-5 text-gray-600">Transforming Industries through Innovative Technology</p>
+                        </div>
+                    </div>
+                    <FooterContent />
                 </div>
             </div>
-            <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-                <h2 className="title-font font-medium text-gray-600 text-lg mb-5">&nbsp;</h2>
-                <nav className="list-none mb-10">
-                <li className="mb-5">
-                    <a href="pricing" className="text-gray-600 hover:text-gray-800">Pricing</a>
-                </li>
-                <li className="mb-5">
-                    <a href="contact" className="text-gray-600 hover:text-gray-800">Contact</a>
-                </li>
-                {/* <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Templates</a>
-                </li> */}
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">SBM</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Enterprise</a>
-                </li>
-                {/* <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Nonprofits</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Apps marketplace</a>
-                </li> */}
-                <li>
-                    <a className="text-gray-600 hover:text-gray-800">24/7 Support</a>
-                </li>
-                </nav>
-            </div>
-            <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-                <h2 className="title-font font-medium text-black text-lg mb-5">Features</h2>
-                <nav className="list-none mb-10">
-                {/* <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Docs</a>
-                </li> */}
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Integrations</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Automations</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Files</a>
-                </li>
-                {/* <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Dashboards</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Kanban</a>
-                </li>
-                <li>
-                    <a className="text-gray-600 hover:text-gray-800">Gantt</a>
-                </li> */}
-                </nav>
-            </div>
-            {/* <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-                <h2 className="title-font font-medium text-gray-600 text-lg mb-5">ACAI features</h2>
-                <nav className="list-none mb-10">
-                <li className="mb-5">
-                    <a className="inline-flex text-gray-600 hover:text-gray-800"><Image src="/work.png" width="25" height="15" alt="work management" className="mr-2"/>acai work management</a>
-                </li>
-                <li className="mb-5">
-                    <a className="inline-flex text-gray-600 hover:text-gray-800"><Image src="/crm.png" width="25" height="15" alt="work management" className="mr-2"/>acai sales CRM</a>
-                </li>
-                <li className="mb-5">
-                    <a className="inline-flex text-gray-600 hover:text-gray-800"><Image src="/marketer.png" width="25" height="15" alt="work management" className="mr-2"/>acai marketer</a>
-                </li>
-                <li className="mb-5">
-                    <a className="inline-flex text-gray-600 hover:text-gray-800"><Image src="/project.png" width="25" height="15" alt="work management" className="mr-2"/>acai projects</a>
-                </li>
-                <li className="mb-10">
-                    <a className="inline-flex text-gray-600 hover:text-gray-800"><Image src="/dev.png" width="25" height="15" alt="work management" className="mr-2"/>acai dev</a>
-                </li>
-                <h2 className="title-font font-medium text-gray-600 text-lg mb-5">More by acai.com</h2>
-                <li className="mb-5">
-                    <a className="inline-flex text-gray-600 hover:text-gray-800"><Image src="/canvas.png" width="25" height="15" alt="work management" className="mr-2"/>Canvas</a>
-                </li>
-                <li>
-                    <a className="inline-flex text-gray-600 hover:text-gray-800"><Image src="/workform.png" width="25" height="15" alt="work management" className="mr-2"/>WorkForms</a>
-                </li>
-                </nav>
-            </div> */}
-            <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-                <h2 className="title-font font-medium text-black text-lg mb-5">Use cases</h2>
-                <nav className="list-none mb-10">
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Finiance Firms</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Small Businesses</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Startups</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Small Accounting Firms</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Enterprise</a>
-                </li>
-                {/* <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">IT</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Operations</a>
-                </li>
-                <li>
-                    <a className="text-gray-600 hover:text-gray-800">Construction</a>
-                </li> */}
-                </nav>
-            </div>
-            <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-                <h2 className="title-font font-medium text-black text-lg mb-5">Company</h2>
-                <nav className="list-none mb-10">
-                <li className="mb-5">
-                    <a href="about" className="text-gray-600 hover:text-gray-800">About Us</a>
-                </li>
-                {/* <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Careers - We are hiring!</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">monday-U</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Press</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Customer stories</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Become a partner</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Sustainability & ESG</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Affiliates</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Digital Lift</a>
-                </li>
-                <li>
-                    <a className="text-gray-600 hover:text-gray-800">Investor relations</a>
-                </li> */}
-                </nav>
-            </div>
-            <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-                <h2 className="title-font font-medium text-black text-lg mb-5">Resources</h2>
-                <nav className="list-none mb-10">
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Help</a>
-                </li>
-                {/* <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Community</a>
-                </li> */}
-                <li className="mb-5">
-                    <a href="blog" className="text-gray-600 hover:text-gray-800">Blog</a>
-                </li>
-                {/* <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Webinars</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Startup for startup</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Global events</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">App development</a>
-                </li>
-                <li className="mb-5">
-                    <a className="text-gray-600 hover:text-gray-800">Find a partner</a>
-                </li>
-                <li>
-                    <a className="text-gray-600 hover:text-gray-800">Compare</a>
-                </li> */}
-                </nav>
-            </div>
-            </div>
-        </div>
-        <div className="">
-            <div className="container px-5 lg:px-20 py-8 flex flex-wrap mx-auto items-center">
 
-                <span className="inline-flex  lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
-                    <a className="text-gray-500" href="https://linkedin.com" target="_blank">
-                    <FontAwesomeIcon icon={faLinkedinIn} className="h-6 w-6"/>
-                    </a>
-                    <a className="ml-3 text-gray-500" href="https://facebook.com" target="_blank">
-                    <FontAwesomeIcon icon={faFacebook} className="h-6 w-6"/>
-                    </a>
-                    <a className="ml-3 text-gray-500" href="https://twitter.com" target="_blank">
-                    <FontAwesomeIcon icon={faTwitter} className="h-6 w-6"/>
-                    </a>
-                    <a className="ml-3 text-gray-500" href="https://instagram.com" target="_blank">
-                    <FontAwesomeIcon icon={faInstagram} className="h-6 w-6"/>
-                    </a>
+            <div className="px-5 lg:px-20 py-8 flex flex-wrap mx-auto items-center">
+                <span className="inline-flex  lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto gap-3">
+                    <Socialmedia />
                 </span>
-
-                <div className="flex md:flex-nowrap sm:ml-auto flex-wrap justify-center items-end md:justify-start">
+                <div className="flex md:flex-nowrap sm:ml-auto flex-wrap justify-center items-end md:justify-start gap-2">
                     <Link href="https://play.google.com/store/apps?hl=en_IN&gl=US" target="_blank">
                     <div className="flex mt-3 w-48 h-14 bg-black text-white rounded-lg items-center justify-center">
                         <div className="mr-3">
@@ -252,23 +56,21 @@ export default function Footer()
                     </div>
                     </Link>
                 </div>
+            </div>
 
+            <div className="mx-auto py-4 px-5 sm:px-20 mb-10 flex flex-wrap flex-col sm:flex-row">
+                <span className="text-gray-500 text-sm text-center sm:text-left">
+                    <a className="underline">Security</a>&nbsp;|&nbsp;
+                    <a href="#" className="underline">Terms and privacy</a>&nbsp;|&nbsp;
+                    <a href="#" className="underline">Privacy policy</a>&nbsp;|&nbsp;
+                    <a className="underline">Status</a>
+                </span>
+                <p className="text-gray-500 text-sm text-center sm:text-left sm:ml-20">All Rights Reserved
+                    <a href="https://app.theaccountantai.com/" className="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer"> © theaccountantai.com</a>
+                </p>
+                <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm underline">Accessibility statement</span>
             </div>
-        </div>
-        {/* <div className="bg-gray-100"> */}
-            <div className="container mx-auto py-4 px-5 sm:px-20 mb-10 flex flex-wrap flex-col sm:flex-row">
-            <span className="text-gray-500 text-sm text-center sm:text-left">
-                <a className="underline">Security</a>&nbsp;|&nbsp;
-                <a href="#" className="underline">Terms and privacy</a>&nbsp;|&nbsp;
-                <a href="#" className="underline">Privacy policy</a>&nbsp;|&nbsp;
-                <a className="underline">Status</a>
-            </span>
-            <p className="text-gray-500 text-sm text-center sm:text-left sm:ml-20">All Rights Reserved
-                <a href="https://app.theaccountantai.com/" className="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer"> © theaccountantai.com</a>
-            </p>
-            <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm underline">Accessibility statement</span>
-            </div>
-        {/* </div> */}
+
         </footer>
         </React.Fragment>
     );

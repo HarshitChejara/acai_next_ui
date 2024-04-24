@@ -1,9 +1,9 @@
-"use client";
 
 import Image from "next/image";
 import React from 'react';
-import Link from "next/link";
+import { Button } from "@nextui-org/react";
 import { productivityData } from '../../../../data/productivity';
+import { targetData } from '../../../../data/target';
 
 
 export default function Productivity() {
@@ -12,7 +12,6 @@ export default function Productivity() {
             {productivityData.Productivity.map((productivity, index) => (
             <div key={index} className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                    {/* <Image className="object-cover object-center rounded" width={400} height={400} alt="hero" src="/task1.png"/> */}
                     {productivity.images && productivity.images.map((image, imgIndex) => (
                         <Image key={imgIndex} src={image} alt="Card background" className="object-cover object-center rounded" width={400} height={400} />
                     ))}
@@ -22,7 +21,11 @@ export default function Productivity() {
                     <p className="mb-8 leading-relaxed text-2xl">{productivity.content}</p>
                     <p className="mb-8 leading-relaxed text-2xl">{productivity.subcontent}</p>
                     <div className="flex justify-center">
-                        <Link href="https://app.theaccountantai.com/" target="_blank"><button className="inline-flex text-white bg-[#5236FF] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Try Now</button></Link>
+                        {targetData.Target.map((target) => (
+                            <a href={target.link} target="_blank">
+                                <Button className="custom-button">Try Now</Button>
+                            </a>
+                        ))}
                     </div>
                 </div>
             </div>

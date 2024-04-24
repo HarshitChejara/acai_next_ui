@@ -9,12 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@headlessui/react": "^1.7.19",
+    "@mui/material": "^5.15.15",
     "@nextui-org/react": "^2.3.5",
+    "axios": "^1.6.8",
     "framer-motion": "^11.1.7",
     "next": "14.2.2",
     "next-ui": "^0.9.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-router-dom": "^6.23.0",
+    "sweetalert2": "^11.10.8",
     "tailwind-variants": "^0.2.1"
   },
   "devDependencies": {
