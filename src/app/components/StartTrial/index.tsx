@@ -13,8 +13,8 @@ export default function StartTrial() {
                         <br className="hidden lg:inline-block"/>system with The Accountant AI
                     </h1>
                     <div className="flex justify-center mt-8">
-                        {targetData.Target.map((target) => (
-                            <a href={target.link} target="_blank">
+                        {targetData.Target.map((target, index) => (
+                            <a key={index} href={target.link} target="_blank">
                                 <Button className="inline-flex text-black font-medium bg-white py-2 px-14 focus:outline-none rounded-xl text-lg">Start Trial</Button>
                             </a>
                         ))}

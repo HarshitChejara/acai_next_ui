@@ -40,8 +40,8 @@ export default function FeaturesPage() {
                 <Platform />
             </div>
             <div className="items-center text-center">
-                {targetData.Target.map((target) => (
-                    <a href={target.link} target="_blank">
+                {targetData.Target.map((target, index) => (
+                    <a key={index} href={target.link} target="_blank">
                         <Button className="custom-button mt-10">Get Started</Button>
                     </a>
                 ))}

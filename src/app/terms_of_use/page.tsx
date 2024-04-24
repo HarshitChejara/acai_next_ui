@@ -21,8 +21,8 @@ export default function TermsOfUse() {
               </div>
               <Image alt="team" className="flex-shrink-0 object-cover object-center mt-10" width={990} height={400} src="/how_to_use.png"/>
               <TermOfUse />
-              {targetData.Target.map((target) => (
-                <a href={target.link} target="_blank"><Button className="mt-10 custom-button">Try Now</Button></a>
+              {targetData.Target.map((target, index) => (
+                <a key={index} href={target.link} target="_blank"><Button className="mt-10 custom-button">Try Now</Button></a>
               ))}
             </div>
         </div>

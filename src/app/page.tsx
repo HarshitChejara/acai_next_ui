@@ -24,8 +24,8 @@ export default function Home() {
           <h1 className="title-font sm:text-6xl text-3xl mb-4 font-bold text-gray-900">A platform built for intelligent Accounting</h1>
           <p className="mb-8 leading-relaxed text-lg">What would you like to manage with theaccountantai.com</p>
           <div className="flex justify-center">
-            {targetData.Target.map((target) => (
-                <a href={target.link} target="_blank">
+            {targetData.Target.map((target, index) => (
+                <a key={index} href={target.link} target="_blank">
                     <Button className="custom-button">Get Started</Button>
                 </a>
             ))}
@@ -41,8 +41,8 @@ export default function Home() {
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">Your Automated Accountant that manages your Accounts in your way</h1>
             <p className="mb-8 leading-relaxed text-lg">Streamline your accounting needs, efficiency, and productivity by customizing any workflow to fit your needs. Import any IMG/CSV/EXCEL/PDF/WORD file or from your own software API.</p>
             <div className="flex justify-center">
-              {targetData.Target.map((target) => (
-                  <a href={target.link} target="_blank">
+              {targetData.Target.map((target, index) => (
+                  <a key={index} href={target.link} target="_blank">
                       <Button className="custom-button">Get Started</Button>
                   </a>
               ))}
@@ -98,8 +98,8 @@ export default function Home() {
           <div className="text-white py-12 body-font">
             <div className="container background sm:py-12 py-5 sm:px-42 mx-auto">
               <div className="flex flex-col items-center text-center w-full mb-20">
-                {targetData.Target.map((target) => (
-                  <a href={target.link} target="_blank">
+                {targetData.Target.map((target, index) => (
+                  <a key={index} href={target.link} target="_blank">
                       <Button className="custom-button mb-4">Try now</Button>
                   </a>
                 ))}
@@ -124,8 +124,8 @@ export default function Home() {
               </div>
           </div>
           <div className="items-center text-center">
-            {targetData.Target.map((target) => (
-                <a href={target.link} target="_blank">
+            {targetData.Target.map((target, index) => (
+                <a key={index} href={target.link} target="_blank">
                     <Button className="custom-button">Get Started</Button>
                 </a>
             ))}

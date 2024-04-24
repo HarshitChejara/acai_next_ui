@@ -22,7 +22,7 @@ export default function Productivity() {
                     <p className="mb-8 leading-relaxed text-2xl">{productivity.subcontent}</p>
                     <div className="flex justify-center">
                         {targetData.Target.map((target) => (
-                            <a href={target.link} target="_blank">
+                            <a key={index} href={target.link} target="_blank">
                                 <Button className="custom-button">Try Now</Button>
                             </a>
                         ))}

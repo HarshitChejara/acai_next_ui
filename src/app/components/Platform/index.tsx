@@ -18,7 +18,7 @@ export default function Platform() {
                         <p className="mb-4">{platform.content}</p>
                         <span className="inline-flex">
                             {targetData.Target.map((target) => (
-                                <a href={target.link} target="_blank" className="more">Learn More</a>
+                                <a key={index} href={target.link} target="_blank" className="more">Learn More</a>
                             ))}
                         </span>
                     </div>

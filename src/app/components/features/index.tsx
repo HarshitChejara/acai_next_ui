@@ -19,7 +19,7 @@ export default function Features() {
                         <p className="mb-4">{features.content}</p>
                         <span className="inline-flex">
                             {targetData.Target.map((target) => (
-                                <a href={target.link} target="_blank" className="more">Try now</a>
+                                <a key={index} href={target.link} target="_blank" className="more">Try now</a>
                             ))}
                         </span>
                     </div>

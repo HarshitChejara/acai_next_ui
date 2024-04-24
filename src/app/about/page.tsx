@@ -35,7 +35,7 @@ export default function AboutUs() {
                 <h2 className="custom-heading title-text mb-2 md:w-2/5">How did we
                 <br className="custom-heading title-text"/>Start?</h2>
             <div className="md:w-3/5 md:pl-12">
-                <p className="leading-relaxed text-base text-xl">Driven by decades of experience as Chartered Accountants, our founders recognized the industry's challenges. Fueled by a desire to innovate, they developed our product, addressing the inefficiencies of traditional accounting.</p>
+                <p className="leading-relaxed text-base text-xl">Driven by decades of experience as Chartered Accountants, our founders recognized the industrys challenges. Fueled by a desire to innovate, they developed our product, addressing the inefficiencies of traditional accounting.</p>
                 <p className="leading-relaxed text-base text-xl"> Today, as a cutting-edge startup, we leverage their expertise to provide unparalleled solutions, revolutionizing financial management for businesses.</p>
             </div>
         </div>

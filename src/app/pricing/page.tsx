@@ -22,8 +22,8 @@ export default function Pricing() {
             <h1 className="sm:text-5xl text-3xl font-bold title-font mb-5 text-gray-900">Supercharge your teamwork. Start <span className="more">free</span></h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-xl text-gray-500">Unlimited file imports and inteligent accounting. No credit card needed.</p>
             <div className="flex mx-auto overflow-hidden py-8">
-            {targetData.Target.map((target) => (
-                <a href={target.link} target="_blank"><Button className="custom-button">Get Started</Button></a>
+            {targetData.Target.map((target, index) => (
+                <a key={index} href={target.link} target="_blank"><Button className="custom-button">Get Started</Button></a>
             ))}
             </div>
         </div>
@@ -38,8 +38,8 @@ export default function Pricing() {
                 </h1>
                 <h2 className="custom-text">Free Forever</h2>
                     <div className="items-left py-3">
-                    {targetData.Target.map((target) => (
-                        <a href={target.link} target="_blank"><Button className="pricing-button">Try for free</Button></a>
+                    {targetData.Target.map((target, index) => (
+                        <a key={index} href={target.link} target="_blank"><Button className="pricing-button">Try for free</Button></a>
                     ))}
                     </div>
                     <p className="text-gray-500 text-lg">For Companies looking to keep track of their accounting</p>
@@ -61,8 +61,8 @@ export default function Pricing() {
                 <h2 className="custom-text">Total $90 / month</h2>
                     <p className="text-gray-500">Billed annually</p>
                     <div className="items-left py-3">
-                    {targetData.Target.map((target) => (
-                        <a href={target.link} target="_blank"><Button className="pricing-button">Get Plan</Button></a>
+                    {targetData.Target.map((target, index) => (
+                        <a key={index} href={target.link} target="_blank"><Button className="pricing-button">Get Plan</Button></a>
                     ))}
                     </div>
                     <p className="text-gray-500 text-lg">Automate all your data entry in one place.</p>
@@ -86,8 +86,8 @@ export default function Pricing() {
                 <h2 className="custom-text">Total $160 / month</h2>
                     <p className="text-gray-500">Billed annually</p>
                     <div className="items-left py-3">
-                    {targetData.Target.map((target) => (
-                        <a href={target.link} target="_blank"><Button className="pricing-button">Get Plan</Button></a>
+                    {targetData.Target.map((target, index) => (
+                        <a key={index} href={target.link} target="_blank"><Button className="pricing-button">Get Plan</Button></a>
                     ))}
                     </div>
                     <p className="text-gray-500 text-lg">Automate and optimize your accounting processes</p>
@@ -107,8 +107,8 @@ export default function Pricing() {
                 <h2 className="custom-text">Book demo today</h2>
                     <p className="text-gray-500">Billed annually</p>
                     <div className="items-left py-3">
-                    {targetData.Target.map((target) => (
-                        <a href={target.link} target="_blank"><Button className="pricing-button">Get Plan</Button></a>
+                    {targetData.Target.map((target, index) => (
+                        <a key={index} href={target.link} target="_blank"><Button className="pricing-button">Get Plan</Button></a>
                     ))}
                     </div>
                     <p className="text-gray-500 text-lg">Streamline and run the complex workflows of your organization</p>
@@ -147,8 +147,8 @@ export default function Pricing() {
         <h1 className="custom-heading title-text">Start using theaccountantai.com today</h1>
         <p className="lg:w-2/3 mx-auto leading-relaxed text-xl text-gray-500">Try it now for free / No credit card needed</p>
             <div className="flex mx-auto overflow-hidden mt-6">
-                {targetData.Target.map((target) => (
-                    <a href={target.link} target="_blank"><Button className="custom-button">Get Started </Button></a>
+                {targetData.Target.map((target, index) => (
+                    <a key={index} href={target.link} target="_blank"><Button className="custom-button">Get Started </Button></a>
                 ))}
             </div>
         </div>

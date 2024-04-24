@@ -19,7 +19,7 @@ export default function Articles() {
                     ))}
                     <div className="absolute bottom-0 flex mb-8">
                     {targetData.Target.map((target) => (
-                        <a href={target.link} target="_blank">
+                        <a key={index} href={target.link} target="_blank">
                             <Button className="articles-button">{articles.button1}</Button>
                             <Button className="articles-button">{articles.button2}</Button>
                         </a>
@@ -32,7 +32,7 @@ export default function Articles() {
                     <p className="leading-relaxed mb-3">{articles.content}</p>
                     <div className="flex items-center flex-wrap ">
                     {targetData.Target.map((target) => (
-                        <a href={target.link} target="_blank" className="more">Read More</a>
+                        <a key={index} href={target.link} target="_blank" className="more">Read More</a>
                     ))}
                     </div>
                 </div>

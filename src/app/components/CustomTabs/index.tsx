@@ -80,7 +80,7 @@ export default function CustomTabs() {
                 <p className="mb-8 leading-relaxed text-lg lg:mt-10 sm:mt-5 mt-5">{customTabs.content}</p>
                 <div className="flex justify-center">
                   {targetData.Target.map((target) => (
-                      <a href={target.link} target="_blank">
+                      <a key={index} href={target.link} target="_blank">
                         <Button className="inline-flex text-white bg-[#242331] py-2 px-6 rounded text-lg">Get Started</Button>
                       </a>
                   ))}
@@ -115,7 +115,7 @@ export default function CustomTabs() {
                 <p className="mb-8 leading-relaxed text-lg lg:mt-10 sm:mt-5 mt-5">{customTabs.content}</p>
                 <div className="flex justify-center">
                   {targetData.Target.map((target) => (
-                      <a href={target.link} target="_blank">
+                      <a key={index} href={target.link} target="_blank">
                         <Button className="inline-flex text-white bg-[#242331] py-2 px-6 rounded text-lg">Get Started</Button>
                       </a>
                   ))}                </div>
@@ -150,7 +150,7 @@ export default function CustomTabs() {
                 <p className="mb-8 leading-relaxed text-lg lg:mt-10 sm:mt-5 mt-5">{customTabs.content}</p>
                 <div className="flex justify-center">
                   {targetData.Target.map((target) => (
-                      <a href={target.link} target="_blank">
+                      <a key={index} href={target.link} target="_blank">
                         <Button className="inline-flex text-white bg-[#242331] py-2 px-6 rounded text-lg">Get Started</Button>
                       </a>
                   ))}                </div>

@@ -79,8 +79,8 @@ const Header = () => {
         </Transition>
 
         <div className="hidden sm:block lg:px-5 px-1 py-7 h-24 ">
-          {targetData.Target.map((target) => (
-            <a href={target.link} target="_blank">
+          {targetData.Target.map((target, index) => (
+            <a key={index} href={target.link} target="_blank">
                 <Button type="button" className="background flex text-white rounded py-2 lg:px-5 px-1 leading-6">Get Started</Button>
             </a>
           ))}
