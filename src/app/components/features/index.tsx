@@ -10,7 +10,7 @@ export default function Features() {
         <React.Fragment>
             {featuresData.Features.map((features, index) => (
             <div key={index} className="p-4 lg:w-1/4 md:w-1/2 hover:bg-[#F9F9F9] rounded-xl hover:translate-y-12">
-                <div className="py-10 h-full flex flex-col items-center text-center">
+                <div className="py-5 h-full flex flex-col items-center text-center">
                     {features.images && features.images.map((image, imgIndex) => (
                         <Image key={imgIndex} src={image} alt="item" className="flex-shrink-0 rounded-lg object-cover object-center mb-4" width={250} height={250} />
                     ))}

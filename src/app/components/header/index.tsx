@@ -29,7 +29,7 @@ const Header = () => {
           <div className="hidden sm:flex items-center justify-center gap-2 lg:gap-8 gap-4">
             <Link href="blog">Blogs</Link>
             <Link href="pricing">Pricing</Link>
-            <Link href="contact" target="_blank"><Button type="button" className="text-[#5236FF] border border-[#5236FF] rounded py-2 lg:px-5 px-1 leading-6 bg-white flex">Book Demo</Button></Link>
+            <Link href="contact" target="_blank"><Button type="button" className="demo-button rounded py-2 lg:px-5 px-1 leading-6 bg-white flex">Book Demo</Button></Link>
           </div>
         </div>
 
@@ -81,7 +81,7 @@ const Header = () => {
         <div className="hidden sm:block lg:px-5 px-1 py-7 h-24 ">
           {targetData.Target.map((target, index) => (
             <a key={index} href={target.link} target="_blank">
-                <Button type="button" className="background flex text-white rounded py-2 lg:px-5 px-1 leading-6">Get Started</Button>
+                <Button type="button" className="custom-button flex text-white rounded lg:py-2 lg:px-5 px-1 leading-6">Get Started</Button>
             </a>
           ))}
         </div>

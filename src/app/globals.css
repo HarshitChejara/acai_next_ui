@@ -99,8 +99,8 @@ body {
 
 
 .title-button {
-  background: #efecff;
-  color: #5236ff;
+  background: #e8f3fd;
+  color: #4285f4;
   border-radius: 25px;
   /* width: 9%; */
   font-size: unset;
@@ -108,18 +108,22 @@ body {
 }
 
 .more {
-color: #5236ff;
+color: #4285f4;
 text-decoration: underline;
 }
 
 
 .background {
-background-color: #5236FF;
+background-color: #4285f4;
 }
 
+.demo-button {
+  color: #4285f4;
+  border: 1px solid #4285f4;
+}
 
 .pricing-button {
-  background-color: #5236FF;
+  background-color: #4285f4;
   padding: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -128,15 +132,32 @@ background-color: #5236FF;
 }
 
 
+.tab-button {
+  background-color: #4285f4;
+  padding: 1.1rem;
+  border-radius: 0.375rem;
+  /* margin-right: -0.8rem; */
+  /* margin-left: -0.8rem; */
+  color: white;
+  cursor: pointer;
+}
+
+.tab-button:hover {
+  background-color: #F9F9F9;
+  color: black;
+}
+
+
+
 .custom-button {
   display: inline-flex;
   color: white;
-  background-color: #5236FF;
+  background-color: #4285f4;
   border: none;
-  padding-top: 1.70rem;
-  padding-bottom: 1.70rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-top: 1.50rem;
+  padding-bottom: 1.50rem;
+  padding-left: 1.50rem;
+  padding-right: 1.50rem;
   outline: none;
   transition: background-color 0.3s ease;
   border-radius: 0.375rem;

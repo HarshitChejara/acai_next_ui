@@ -95,7 +95,7 @@ export default function Home() {
           </div>
 
 
-          <div className="text-white py-12 body-font">
+          <div className="text-white body-font">
             <div className="container background sm:py-12 py-5 sm:px-42 mx-auto">
               <div className="flex flex-col items-center text-center w-full mb-20">
                 {targetData.Target.map((target, index) => (

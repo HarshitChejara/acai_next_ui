@@ -31,34 +31,34 @@ export default function CustomTabs() {
         value={value}
         onChange={handleChange}
         aria-label="basic tabs example"
-        TabIndicatorProps={{ style: { backgroundColor: '#5E5ADB' } }}
+        TabIndicatorProps={{ style: { backgroundColor: '#4285f4' } }}
       >
         <Tab
           disableRipple
           label={
             <div className="tab">
-              <div className="background hover:bg-[#F9F9F9] py-5 px-5 rounded-xl text-white hover:text-black">01. Create account</div>
+              <div className="tab-button">01. Create account</div>
             </div>
           }
-          sx={{ '&.Mui-selected': { color: '#5E5ADB' } }}
+          sx={{ '&.Mui-selected': { color: '#4285f4' } }}
         />
         <Tab
           disableRipple
           label={
             <div className="tab">
-              <div className="background hover:bg-[#F9F9F9] py-5 px-5 rounded-xl text-white hover:text-black">02. Automate accounting</div>
+              <div className="tab-button">02. Automate accounting</div>
             </div>
           }
-          sx={{ '&.Mui-selected': { color: '#5E5ADB' } }}
+          sx={{ '&.Mui-selected': { color: '#4285f4' } }}
         />
         <Tab
           disableRipple
           label={
             <div className="tab">
-              <div className="background hover:bg-[#F9F9F9] py-5 px-5 rounded-xl text-white hover:text-black">03. Sit back and relax!</div>
+              <div className="tab-button">03. Sit back and relax!</div>
             </div>
           }
-          sx={{ '&.Mui-selected': { color: '#5E5ADB' } }}
+          sx={{ '&.Mui-selected': { color: '#4285f4' } }}
           {...a11yProps(1)}
         />
       </Tabs>
@@ -71,7 +71,7 @@ export default function CustomTabs() {
         {customTabsData.CustomTabs.map((customTabs, index) => (
           <div key={index} className="lg:px-56">
             {index === 0 && (
-            <div className="container mx-auto flex px-5  py-24 md:flex-row flex-col items-center">
+            <div className="container mx-auto flex md:flex-row flex-col items-center">
               <div className="lg:flex-grow md:w-1/2 lg:pr-16 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
                 <div className="flex">
                   <Image className="object-cover object-center rounded sm:mr-5 h-20 w-20" width={50} height={50} alt="hero" src="/user_icon.png"/>
@@ -106,7 +106,7 @@ export default function CustomTabs() {
         {customTabsData.CustomTabs.map((customTabs, index) => (
           <div key={index} className="lg:px-56">
             {index === 1 && (
-            <div className="container mx-auto flex px-5  py-24 md:flex-row flex-col items-center">
+            <div className="container mx-auto flex md:flex-row flex-col items-center">
               <div className="lg:flex-grow md:w-1/2 lg:pr-16 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
                 <div className="flex">
                   <Image className="object-cover object-center rounded sm:mr-5 h-20 w-20" width={50} height={50} alt="hero" src="/user_icon.png"/>
@@ -141,7 +141,7 @@ export default function CustomTabs() {
         {customTabsData.CustomTabs.map((customTabs, index) => (
           <div key={index} className="lg:px-56">
             {index === 2 && (
-            <div className="container mx-auto flex px-5  py-24 md:flex-row flex-col items-center">
+            <div className="container mx-auto flex md:flex-row flex-col items-center">
               <div className="lg:flex-grow md:w-1/2 lg:pr-16 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
                 <div className="flex">
                   <Image className="object-cover object-center rounded sm:mr-5 h-20 w-20" width={50} height={50} alt="hero" src="/user_icon.png"/>
